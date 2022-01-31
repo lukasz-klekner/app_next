@@ -1,9 +1,14 @@
-import Head from 'next/head'
-import Image from 'next/image'
-import styles from '../styles/Home.module.css'
+import Link from 'next/link'
 
 const Page = () => {
-  return <div>Page Index</div>
+  return (
+    <div>
+      <h1>Page Index</h1>
+      <Link href='/notes'>
+        <a>Notes</a>
+      </Link>
+    </div>
+  )
 }
 
 export default Page
